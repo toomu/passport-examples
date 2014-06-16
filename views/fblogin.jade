@@ -37,7 +37,7 @@ html
       }
       window.fbAsyncInit = function() {
       FB.init({
-      appId      : '1441615989426007',
+      appId      : '{your-app-id}',
       cookie     : true,  // enable cookies to allow the server to access
       // the session
       xfbml      : true,  // parse social plugins on this page
@@ -63,7 +63,7 @@ html
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.com/en_US/sdk.js";
+      js.src = "//connect.facebook.net/en_US/sdk.js";
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
       // Here we run a very simple test of the Graph API after login is
@@ -82,4 +82,3 @@ html
         the FB.login() function when clicked.
     fb:login-button(scope='public_profile,email', onlogin='checkLoginState();')
     #status
-      
